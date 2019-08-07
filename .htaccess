@@ -1,0 +1,2 @@
+ErrorDocument 503 /index.html
+Header always set Retry-After "7200"
