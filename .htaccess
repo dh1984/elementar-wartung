@@ -1,2 +1,6 @@
+RewriteEngine On
+RewriteCond %{REQUEST_URI} !\.(html|css|jpg|ttf|ico)$
+RewriteRule .* - [R=503,L]
+
 ErrorDocument 503 /index.html
 Header always set Retry-After "7200"
